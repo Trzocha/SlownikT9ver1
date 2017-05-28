@@ -1,0 +1,22 @@
+struct Litera;
+
+void slownik();
+void wczytaj_buffor(char buff[]);
+int dl_buff(char buff[]);
+void poczatek_slowa(Litera *&PListy,int cyfra);
+int ktory_nr(char buff[],int i);
+void cialo_slowa(Litera *&KListy,int cyfra);
+void wstaw_slowo_klucz(Litera *&klucz,char buff[],int dl);
+void wypisz_slowa(Litera *&slowa);
+void wczytaj_kod(char kod[]);
+int dl_kodu(char kod[]);
+bool przeszukaj_drzewo(Litera *elementy[],char kod[],int dl_kodu);
+bool po_galezi(Litera *&galazka,char kod[],int dl_kodu,int &licznik);
+void wprowadz_slowa(Litera *tab_pocz[]);
+void szukaj_wg_klucza(Litera *tab_pocz[]);
+bool szukajDalej_poGalezi(Litera *&ide);
+void wstaw_leksyko(Litera *&klucz,Litera *&nowy,Litera *&wsk_za_kluczem,char buff[],int dl);
+int porownaj(Litera *&klucz,char buff[],int dl);
+void dodaj_na_pocz(Litera *&klucz,Litera *&nowy);
+void dodaj_przed_elK(Litera *&klucz,Litera *&wsk_za_kluczem,Litera *&nowy);
+void dodaj_na_koniec(Litera *&wsk_za_kluczem,Litera *&nowy);
